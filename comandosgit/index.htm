@@ -6,6 +6,109 @@
 	<title>Hoja de comandos git y uso de la consola</title>
 </head>
 <body>
-	<p>Vuelve pronto para ver el contenido</p>
+	<h1>La consola git CMD:</h1>
+<p>La consola de git CMD consiste en una pantalla en negro En la que escribimos comandos que realizan distintas acciones.</p>
+<details>
+	<summary>
+		<h2>Navegación con lector de pantalla:</h2>
+	</summary>
+	<p>Es aconsejable utilizar NVDA, de preferencia con el complemento Speech History.</p>
+	<p>Con el complemento speech history podemos navegar por el historial de todo lo que NVDA va leyendo, con el comando shift+F11, leemos hacia atrás en el historial, con el comando shift+F12 leemos hacia delante en el historial, y con F12 copiamos el mensaje seleccionado.</p>
+	<p>Lo anterior nos ayuda al trabajar con la consola, debido a que en ocasiones se complica leer el resultado de los comandos que ejecutamos.</p>
+	<p>De forma adicional podemos utilizar el cursor de revisión de NVDA o el cursor de jaws para leer los resultados de la consola.</p>
+	<p>Los comandos para utilizar cada uno cambian según el tipo de teclado, por lo que deberemos buscar los comandos para el lector de pantalla que utilizamos según nuestro teclado ya sea portátil o de escritorio.</p>
+</details>
+<details>
+	<summary>
+		<h2>Uso básico de la consola</h2>
+	</summary>
+	<ul>
+		<li>En la consola podemos leer el comando carácter por carácter que escribimos navegando con flechas izquierda y derecha.</li>
+		<li>También podemos ver los comandos ejecutados anteriormente con las flechas arriba y abajo.</li>
+		<li>Si pulsamos enter sobre algún comando lo ejecutaremos nuevamente.</li>
+		<li>Con la tecla tab, podremos autocompletar nombres de carpetas o archivos, escribiendo sólo las primeras letras y luego tab nos pondrá el nombre completo.</li>
+	</ul>
+	<h3>Personalizar git CMD</h3>
+	<p>Si ya la tenemos abierta, veamos cómo obtener una interfaz a nuestro gusto mediante sus opciones de personalización.</p>
+	<p>Para acceder a las opciones, solo tendremos que pulsar el comando alt+espacio, y elegir “Propiedades”. Una ventana se abrirá y tendremos varias pestañas para modificar diferentes opciones de la consola.</p>
+	<ul>
+		<li>Opciones: sirve para modificar el funcionamiento básico de la consola, buffer de comandos, interacciones, selección de texto y tamaño del cursor.</li>
+		<li>Fuente: podremos elegir tamaño de fuente y tipo de fuente.</li>
+		<li>Diseño: podremos modificar el tamaño de la ventana por defecto.</li>
+		<li>Colores: desde aquí podremos modificar el color del fondo de ventana, color del texto y hasta la transparencia del fondo de la ventana.</li>
+	</ul>
+	<h3>Introducir comandos y opciones en la consola:</h3>
+	<p>Seguramente todos nos imaginamos cómo utilizar comandos en CMD, pero si es la primera vez que abres la ventana merece la pena tener unas cuantas cosas presentes.</p>
+	<p>Lo primero, para ejecutar un comando lo único que tendremos que hacer es escribirlo detrás del Promt, la línea que muestra el directorio donde estamos en cada momento. Tras escribirlo, pulsaremos Enter para que se ejecute, si se muestra un error, significa que lo hemos escrito mal, que no tenemos permiso, o que el comando no existe.</p>
+	<p>Probemos a ejecutar el comando <code>help</code> que nos mostrará todos los comandos disponibles en CMD.</p>
+	<p>Te aparecerá toda la lista de comandos que puedes ejecutar de forma básica en CMD.</p>
+	<p>Al escribir el comando <code>help</code> y luego enter, vemos uno muy interesante llamado <code>cd</code> que sirve para navegar por los directorios de nuestro sistema. Vamos a ver cómo se utiliza, y aparte echaremos mano nuevamente de help o en este caso  /?  Debemos de escribirlo detrás del comando.</p>
+	<code>cd /?</code>
+	<p>La expresión <code>/?</code> se puede utilizar absolutamente con todos los comandos para mostrar su ayuda correspondiente. Es básico en CMD saber esto.</p>
+	<p>Vemos que aparece una ayuda de cómo utilizar el comando, en ella se muestra que si colocamos <code>cd..</code> estaremos saliendo de un directorio, y si escribimos “cd <ruta>” estaremos accediendo a un nuevo fichero.</p>
+	<p>En este punto, nos va a interesar conocer el comando <code>dir</code> para listar los archivos que hay en un directorio, de esta forma podremos saber el nombre de la carpeta donde queremos entrar.</p>
+	<p>Si escribimos dir, se nos muestran todos los ficheros y directorio que hay en la carpeta actual en donde estamos, es decir en “C:\Users\tuUsuario.</p>
+	<p>Vamos a acceder a nuestra carpeta de documentos y a listar lo que hay. Cuando comencemos a escribir el nombre del archivo o directorio, podremos pulsar la tecla “Tab” para que el nombre se complete automáticamente.</p>
+	<code>cd Documents</code>
+	<code>dir</code>
+	<p>Ahora prueba a ingresar y salir de las diferentes carpetas que tienes en tu carpeta de documentos.</p>
+	<h3>Copiar y pegar ruta y otros textos</h3>
+	<p>Seguramente si queremos acceder a una ruta compleja de forma directa y no sabemos exactamente cómo se escriben sus directorios, lo más fácil será acceder de forma gráfica y pegar la ruta en CMD. Veamos cómo.</p>
+	<p>Accedemos al directorio que nos interese en modo gráfico y pulsamos sobre la barra de direcciones para seleccionar la ruta. En este instante pulsamos “Ctrl + C” para copiar.</p>
+	<p>Ahora nos vamos a CMD nuevamente y solamente tendremos que escribir “cd”, luego pegamos con ctrl+V, Automáticamente se pegará el texto que antes copiamos, si no te funciona pegar con este comando, debes habilitarlo desde las opciones de la consola.</p>
+	<p>De esta forma también podemos pegar cualquier texto; podemos pegar por ejemplo comandos complejos o identificadores extensos.</p>
+	<h3>Limpiar CMD</h3>
+	<p>Si te das cuenta, tu ventana de consola está llena de los comandos y resultados que has ejecutado.</p>
+	<p>Con el comando  <code>cls</code> limpiaremos la ventana de la consola.</p>
+	<p>La pantalla se quedará limpia, aunque siempre podremos volver a ver lo anterior si navegamos con las teclas avance y retroceso de página, o con ayuda del ratón.</p>
+	<h3>Mirar el historial de comandos usados en CMD</h3>
+	<p>Cuando llevemos un tiempo utilizando diferentes comandos, quizás queramos repetir con alguno de ellos. CMD cuenta con un historial de comandos utilizados para acceder a ellos sin necesidad de volver a escribirlos. Para hacer esto tendremos dos opciones:</p>
+	<p>Pulsando las flechas “Arriba” y “Abajo” del teclado podremos seleccionar los últimos comandos utilizados.</p>
+	<p>Tenemos también un comando para listar este historial.</p>
+	<code>doskey /history</code>
+	<h3>Guardar el resultado en un archivo de texto:</h3>
+	<p>Los resultados que obtenemos al ejecutar comandos en la consola en ocasiones son complejos de leer con lector de pantalla, en estos casos es mejor enviar el resultado a un archivo de texto y leerlo luego con detenimiento en el block de notas u otro editor de texto plano.</p>
+	<p>Para enviar el resultado de algún comando a un archivo de texto, pondremos el comando, luego pondremos el símbolo de mayor que >, y luego el nombre del archivo con la extensión .txt.<br />Ejemplo:</p>
+	<code>git status > estado.txt</code>
+	<p>Con el comando anterior consultamos el estado del repositorio actual, y guardamos el resultado en un archivo llamado estado con extensión .txt.</p>
+	<h3>cancelar ejecución o salir de la consola:</h3>
+	<p>Para salir de la consola, podemos escribir ``exit o pulsar control+d, Control+d imprime el carácter especial de final de archivo.</p>
+	<p>Si pulsamos control+c cancelaremos la ejecución de un comando. Útil si, por ejemplo, tarda mucho o queremos interrumpir una operación.</p>
+</details>
+<h2>Comandos de GIT:</h2>
+<h3>Ayuda de Git para uso diario, menos de 20 comandos para usar git diariamente.</h3>
+<dl>
+	<dt>git help everyday</dt>
+	<dd>Abre una página en el navegador con el manual de git en inglés.</dd>
+	<dt>git help -g</dt>
+	<dd>Muestra la ayuda de git en la consola</dd>
+</dl>
+<h3>Repositorios y commits</h3>
+<dt>git init</dt>
+<dd>Marca una carpeta como repositorio de git, apartir de la ejecusión de este comando git estará controlando los cambios dentro de dicha carpeta.</dd>
+<dt>git status</dt>
+<dd>Muestra información sobre el estado del repositorio, archivos que han cambiado, actualizaciones pendientes ETC.</dd>
+<dt>git add .</dt>
+<dd>Añade todos los archivos nuevos y los que han cambiado para registrarlos en el historial de cambios.</dd>
+<dt>git add NOMBREDELARCHIVO</dt>
+<dd>Añade un archivo específico para registrarlo en el historial de cambios.</dd>
+<dt>git rm .</dt>
+<dd>Elimina los archivos que acabamos de añadir para ser guardados.</dd>
+<dt>git commit -m "Nombre descriptivo del cambio que hemos realizado"</dt>
+<dd>Guarda los cambios que estuvimos trabajando en el historial de cambios, con un mensaje que le asignemos.</dd>
+<dt>git log</dt>
+<dd>Muestra todos los cambios que hemos guardado en el proyecto mediante commits.<br />
+La cadena de números y letras que aparece al lado de la palabra “commit” es el identificador que podemos usar para revertir los cambios y volver atrás a ese punto.</dd>
+<dt>git reset --hard IDENTIFICADOR</dt>
+<dd>Vuelve el proyecto al estado del commit especificado mediante el identificador.</dd>
+<dt>git revert</dt>
+<dd>Crea un nuevo commit que revierte los cambios realizados en el último commit, pero no elimina dicho commit.</dd>
+<dt>git diff</dt>
+<dd>Muestra lo que ha cambiado desde el último commit.</dd>
+<!-- git clone https://dominio-remoto.com/usuario/repositorio
+Clona un repositorio remoto mediante https en la carpeta local.
+git clone git@dominio-remoto.com:usuario/repositorio.git
+Clona un repositorio remoto mediante SSH a la carpeta local de repositorios.
+-->
 </body>
 </html>
