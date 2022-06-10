@@ -83,32 +83,49 @@
 	<dt>git help -g</dt>
 	<dd>Muestra la ayuda de git en la consola</dd>
 </dl>
+<h3>Configuración de git:</h3>
+<dl>
+	<dt>git config --global user.name "nombre de usuario"</dt>
+	<dd>Establece el nombre de usuario para git a nivel global, es decir, para todos los repositorios.</dd>
+	<dt>git config --global user.email "usuario@correoElectrónico.com"</dt>
+	<dd>Establece el correo electrónico para git a nivel global.</dd>
+	<dt>git config user.name "nombre de usuario"</dt>
+	<dd>Establece el nombre de usuario solo para el repositorio actual"</dd>
+	<dt>git config user.email</dt>
+	<dd>Establece el correo electrónico solo para el repositorio actual.</dd>
+</dl>
 <h3>Repositorios y commits</h3>
-<dt>git init</dt>
-<dd>Marca una carpeta como repositorio de git, apartir de la ejecusión de este comando git estará controlando los cambios dentro de dicha carpeta.</dd>
-<dt>git status</dt>
-<dd>Muestra información sobre el estado del repositorio, archivos que han cambiado, actualizaciones pendientes ETC.</dd>
-<dt>git add .</dt>
-<dd>Añade todos los archivos nuevos y los que han cambiado para registrarlos en el historial de cambios.</dd>
-<dt>git add NOMBREDELARCHIVO</dt>
-<dd>Añade un archivo específico para registrarlo en el historial de cambios.</dd>
-<dt>git rm .</dt>
-<dd>Elimina los archivos que acabamos de añadir para ser guardados.</dd>
-<dt>git commit -m "Nombre descriptivo del cambio que hemos realizado"</dt>
-<dd>Guarda los cambios que estuvimos trabajando en el historial de cambios, con un mensaje que le asignemos.</dd>
-<dt>git log</dt>
-<dd>Muestra todos los cambios que hemos guardado en el proyecto mediante commits.<br />
-La cadena de números y letras que aparece al lado de la palabra “commit” es el identificador que podemos usar para revertir los cambios y volver atrás a ese punto.</dd>
-<dt>git reset --hard IDENTIFICADOR</dt>
-<dd>Vuelve el proyecto al estado del commit especificado mediante el identificador.</dd>
-<dt>git revert</dt>
-<dd>Crea un nuevo commit que revierte los cambios realizados en el último commit, pero no elimina dicho commit.</dd>
-<dt>git diff</dt>
-<dd>Muestra lo que ha cambiado desde el último commit.</dd>
+<dl>
+	<dt>git init</dt>
+	<dd>Marca una carpeta como repositorio de git, apartir de la ejecusión de este comando git estará controlando los cambios dentro de dicha carpeta.</dd>
+	<dt>git status</dt>
+	<dd>Muestra información sobre el estado del repositorio, archivos que han cambiado, actualizaciones pendientes ETC.</dd>
+	<dt>git add .</dt>
+	<dd>Añade todos los archivos nuevos y los que han cambiado para registrarlos en el historial de cambios.</dd>
+	<dt>git add NOMBREDELARCHIVO</dt>
+	<dd>Añade un archivo específico para registrarlo en el historial de cambios.</dd>
+	<dt>git rm .</dt>
+	<dd>Elimina los archivos que acabamos de añadir para ser guardados.</dd>
+	<dt>git commit -m "Nombre descriptivo del cambio que hemos realizado"</dt>
+	<dd>Guarda los cambios que estuvimos trabajando en el historial de cambios, con un mensaje que le asignemos.</dd>
+	<dt>git log</dt>
+	<dd>Muestra todos los cambios que hemos guardado en el proyecto mediante commits.<br />
+	La cadena de números y letras que aparece al lado de la palabra “commit” es el identificador que podemos usar para revertir los cambios y volver atrás a ese punto.</dd>
+	<dt>git reset --hard IDENTIFICADOR</dt>
+	<dd>Vuelve el proyecto al estado del commit especificado mediante el identificador.</dd>
+	<dt>git revert</dt>
+	<dd>Crea un nuevo commit que revierte los cambios realizados en el último commit, pero no elimina dicho commit.</dd>
+	<dt>git diff</dt>
+	<dd>Muestra lo que ha cambiado desde el último commit.</dd>
+</dl>
 <!-- git clone https://dominio-remoto.com/usuario/repositorio
 Clona un repositorio remoto mediante https en la carpeta local.
 git clone git@dominio-remoto.com:usuario/repositorio.git
 Clona un repositorio remoto mediante SSH a la carpeta local de repositorios.
 -->
+<footer>
+	<p><small>Josias Vásquez</small></p>
+	<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</p>
+</footer>
 </body>
 </html>
