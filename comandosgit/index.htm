@@ -100,6 +100,8 @@
 	<dd>Marca una carpeta como repositorio de git, apartir de la ejecusión de este comando git estará controlando los cambios dentro de dicha carpeta.</dd>
 	<dt>git status</dt>
 	<dd>Muestra información sobre el estado del repositorio, archivos que han cambiado, actualizaciones pendientes ETC.</dd>
+	<dt>git diff</dt>
+	<dd>Muestra lo que ha cambiado desde el último commit.</dd>
 	<dt>git add .</dt>
 	<dd>Añade todos los archivos nuevos y los que han cambiado para registrarlos en el historial de cambios.</dd>
 	<dt>git add NOMBREDELARCHIVO</dt>
@@ -115,13 +117,42 @@
 	<dd>Vuelve el proyecto al estado del commit especificado mediante el identificador.</dd>
 	<dt>git revert</dt>
 	<dd>Crea un nuevo commit que revierte los cambios realizados en el último commit, pero no elimina dicho commit.</dd>
-	<dt>git diff</dt>
-	<dd>Muestra lo que ha cambiado desde el último commit.</dd>
+	<dt>git show identificador</dt>
+	<dd>Muestra información detallada del commit especificado mediante el identificador.</dd>
+	<dt>git show head</dt>
+	<dd>Muestra información detallada del último commit</dd>
+	<!-- git checkout identificador
+	git tag -m "Mensaje explicativo de lo que ha pasado" nombre_tag
+	git tag --list
+	git reset
+	git clean -->
 </dl>
 <!-- git clone https://dominio-remoto.com/usuario/repositorio
 Clona un repositorio remoto mediante https en la carpeta local.
 git clone git@dominio-remoto.com:usuario/repositorio.git
-Clona un repositorio remoto mediante SSH a la carpeta local de repositorios.
+Clona un repositorio remoto mediante SSH a la carpeta local de repositorios. -->
+<h3>Creación y configuración de claves GPG y SSH</h3>
+<dl>
+	<dt>gpg --full-generate-key</dt>
+	<dd>crea una clave gpg</dd>
+	<dt>gpg --list-secret-keys --keyid-format=long</dt>
+	<dd>Obtener el identificador de la clave gpg creada</dd>
+	<dt>gpg --list-secret-keys --keyid-format=long > miGPG.txt</dt>
+	<dd>Obtener el identificador de la clave gpg creada en un archivo de texto</dd>
+	<dt>git config --global user.signingkey identificador</dt>
+	<dd>Firmar a nivel global con la clave gpg especificada mediante el identificador.</dd>
+	<dt>git config --global commit.gpgsign true</dt>
+	<dd>Firmar todos los commits</dd>
+	<dt>git config --global tag.gpgSign true</dt>
+	<dd>Firmar todos los tags</dd>
+	<dt>gpg --export -a "Nombre de Usuario" > public.key</dt>
+	<dd>Exportar la clave pública gpg.</dd>
+</dl>
+<!-- ssh-keygen -t ed25519 -C "correo@ejemplo.com"
+ssh git@github.com
+git remote set-url origin git@github.com:usuario/repositorio.git
+git push origin ramaPredeterminada
+git pull
 -->
 <footer>
 	<p><small>Josias Vásquez</small></p>
