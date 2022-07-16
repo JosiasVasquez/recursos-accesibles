@@ -147,10 +147,12 @@ Clona un repositorio remoto mediante SSH a la carpeta local de repositorios. -->
 	<dd>Firmar todos los tags</dd>
 	<dt>gpg --export -a "Nombre de Usuario" > public.key</dt>
 	<dd>Exportar la clave pública gpg.</dd>
-</dl>
-<!-- ssh-keygen -t ed25519 -C "correo@ejemplo.com"
-ssh git@github.com
-git remote set-url origin git@github.com:usuario/repositorio.git
+	<dt>ssh-keygen -t ed25519 -C "correo@ejemplo.com"</dt>
+	<dd>Crear una clave SSH</dd>
+		<dt>ssh git@github.com</dt>
+		<dd>Comprobar la conexión SSH a github.</dd>
+	</dl>
+<!-- git remote set-url origin git@github.com:usuario/repositorio.git
 git push origin ramaPredeterminada
 git pull
 -->
